@@ -1,0 +1,114 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.navbar {
+    --bs-bg-opacity: 0;
+    text-transform: uppercase;
+}
+
+.hero {
+    background: url("../images/hero.webp");
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: 150%;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}  
+
+@media (max-width: 768px) { 
+    #posterCarousel {
+        display: none !important
+    }
+
+    #heroDescription {
+        text-align: justify;
+    }
+}
+
+
+.poster {
+    width: 500px;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8))
+}
+
+.page {
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+#trailer-vid {
+    width: 75%;
+    height: auto;
+    aspect-ratio: 560/315;
+}
+
+.char-img {
+    border-radius: .5rem;
+}
+
+.char-img {
+    height: 100px;
+    width: auto;
+    background-position: left;
+}
+
+
+/* Info Table */
+
+.table th {
+    padding-left: 1rem;
+}
+
+.rounded-top th {
+    border-top-left-radius: var(--bs-border-radius) !important;
+}
+.rounded-top td {
+    border-top-right-radius: var(--bs-border-radius) !important;
+}
+.rounded-bottom th {
+    border-bottom-left-radius: var(--bs-border-radius) !important;
+}
+.rounded-bottom td {
+    border-bottom-right-radius: var(--bs-border-radius) !important;
+}
+
+
+#buyNow {
+    background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+#buyNow div,
+#buyNow div div {
+    padding-right: 0 !important;
+    margin-right: 0 !important
+}
+
+#buyNow img {
+    object-fit: contain;
+}
+
+.buyBtn-row {
+    margin-top: 20% !important;
+}
+
+.backTop-icon {
+    margin-left: .5rem !important;
+}
+
+.backTop-btn:hover a {
+    color: var(--bs-nav-link-hover-color) !important;
+}
+
+.backTop-btn:hover .backTop-icon::before {
+    content: '\f146'
+}
+
+.bi {
+    margin-right: .5rem;
+    margin-left: -.1rem;
+}
+
+.ticket-btn:hover .ticket-icon::before {
+    content: "\F23D"
+}
